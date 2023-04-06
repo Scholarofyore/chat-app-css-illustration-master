@@ -1,0 +1,290 @@
+html {
+    box-sizing: border-box;
+  }
+
+  * {
+    box-sizing: inherit;
+  }
+
+  body {
+    background-color: hsl(270, 20%, 96%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+  }
+
+  /* Container Styles */
+  .container {
+    margin: 0 auto;
+    position: relative;
+    background-color: hsl(270, 20%, 96%);
+    z-index: -6;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 50px 6% 3% 8%;
+  }
+
+  .background-design {
+    width: 540px;
+    height: 90%;
+    background-image: linear-gradient(180deg,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    z-index: -5;
+    position: absolute;
+    border-radius: 0 0 319px 300px;
+    top: -24%;
+    left: -354px;
+  }
+
+  /* Mobile Phone Styles */
+  .mobile-phone {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 30px;
+    width: 82%;
+    min-width: 270px;
+    max-width: 270px;
+    font-size: .8rem;
+  }
+
+  .mobile-phone-inner {
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 25px;
+    padding-bottom: 8px;
+  }
+
+  /* Header Section */
+
+  header {
+    background-image: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%) );
+    color: hsl(276, 100%, 81%);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 9% 5% 0%;
+    position: relative;
+  }
+
+  .whitebar {
+    position: absolute;
+    top: -13%;
+    left: 22%;
+    width: 56%;
+    height: 49%;
+    border-radius: 0 0 19px 19px;
+    background-color: white;
+  }
+
+  header img {
+    width: 10%;
+    border-radius: 100%;
+    border: 2px solid hsl(276, 100%, 81%);
+    margin-left: 16px;
+  }
+
+  .headerprofile {
+    margin-left: 4%;
+    padding-top: 4%;
+  }
+  
+  .one {
+    margin: 0;
+    color: white;
+
+  }
+
+  .two {
+    margin-bottom: 9%;
+    margin-top: 0;
+    font-size: .6rem;
+  }
+
+  .fa-ellipsis-vertical {
+    margin-left: auto;
+  }
+
+  /* Mobile Phone main section*/
+  .mobile-phone-main {
+    background-color: hsl(270, 20%, 96%);
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2% 3%;
+    font-size: 0.6rem
+  }
+
+  .chat-image {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    left: 32%;
+    margin-top: 8px;
+  }
+
+  .image {
+    width: 27%;
+    border-radius: 30%;
+  }
+
+  .chat-right {
+    color: hsl(271, 15%, 43%);
+    width: 61%;
+    position: relative;
+    left: 40%;
+    background-color: white;
+    padding: 8px 3px 8px 8px;
+    margin-top: 4%;
+    border-radius: 10px 10px 2px 10px;
+  }
+
+  .chat-left {
+    width: 64%;
+    background-color: hsla(276, 100%, 81%, 20%);
+    padding: 9px 3px 9px 8px;
+    color: hsl(276, 55%, 52%);
+    border-radius: 10px 10px 10px 2px;
+  }
+
+  /* Chat Pricing Section Styles */
+
+  .chat-pricing {
+    width: 80%;
+    background-image: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 10px 10px 10px 2px;
+    padding: 12px 3px 9px 12px;
+    margin-bottom: 6px;
+    color: hsl(276, 100%, 81%);
+    position: relative;
+  }
+  
+  span {
+    font-size: 1rem;
+    margin-left: 21%;
+    color: white;
+    font-weight: 500;
+  }
+
+  .pricing-two {
+    margin-left: 32%;
+  }
+
+  /* Radio Styles */
+  .radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .radio-input {
+    display: none;
+  }
+
+  .radio-radio {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid hsl(289, 100%, 72%);
+    padding: 2px;
+    border-radius: 50%;
+    margin-right: 7px;
+  }
+
+  .radio-radio::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    background-color: hsl(293, 100%, 63%);
+    transition: transform 0.2s linear;
+    transform: scale(0);
+  }
+
+  .radio-input:checked + .radio-radio::after {
+    transform: scale(1);
+  }
+
+  /* Chat box section styles */
+
+  .placeholder-text {
+    color: hsl(206, 6%, 79%);
+    margin: 10px;
+    font-size: 0.6rem;
+  }
+
+  .placeholder {
+    background-color: white;
+    border-radius: 15px;
+    padding: 0 3px 0 17px;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+    width: 94%;
+  }
+
+  .fa-circle-chevron-right {
+    margin-left: auto;
+  }
+
+
+  /* Text Section Styles */
+  .main-text {
+    text-align: center;
+    padding: 5%;
+  }
+
+  .text-heading {
+    color: hsl(271, 36%, 24%);
+    font-weight: 500;
+  }
+
+  .main-text p {
+    color: hsl(270, 7%, 64%);
+    font-size: .8rem;
+    line-height: 1.5;
+  }
+
+  /* Media Queries Styles */ 
+  @media screen and (min-width: 762px) {
+    .container {
+      flex-flow: row nowrap;
+    }
+
+    .main-text {
+      padding: 10%;
+      text-align: left;
+      margin: 110px 0px 50px 50px;
+      padding-right: 0;
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 1050px) {
+    .container {
+      padding: 50px 30% 50px 15%;
+    }
+
+    .background-design {
+      top: 0%;
+      left: -6%;
+      height: 100%;
+      width: 480px;
+    }
+  }
+
+  @media screen and (min-width: 1428px) {
+    .container {
+      padding: 50px 35% 50px 17% ;
+    }
+
+    .background-design {
+      left: -5%;
+      width: 465px;
+    }
+  }
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
